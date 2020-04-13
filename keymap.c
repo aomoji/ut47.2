@@ -53,11 +53,11 @@ const macro_t *action_get_macro(keyrecord_t *record, uint8_t id, uint8_t opt)
   dprintf( "opt = %u\n", opt );
 
   switch(id) {
-    case LOWER: {
+	case LOWER: {
       return MACRO_TAP_HOLD_LAYER( record, MACRO(TYPE(KC_NO), END), 1 );
     } break;
 
-    case RAISE: {
+	case RAISE: {
       return MACRO_TAP_HOLD_LAYER( record, MACRO(TYPE(KC_NO), END), 2 );
     } break;
 
